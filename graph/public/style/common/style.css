@@ -63,6 +63,7 @@ ol,ul,li {list-style:none;}
 .w600{width:600px;}
 .w700{width:700px;}
 .w800{width:800px;}
+.w1200{width:1200px;}
 
 .wi5{width:5px!important;}
 .wi10{width:10px!important;}
@@ -136,6 +137,8 @@ ol,ul,li {list-style:none;}
 .p15{padding:15px;}
 .p20{padding:20px;}
 .p30{padding:30px;}
+.p1p2{padding:10px 20px;}
+.p5p2{padding:50px 20px;}
 .pt5{padding-top:5px;}
 .pt10{padding-top:10px;}
 .pt15{padding-top:15px;}
@@ -178,9 +181,11 @@ ol,ul,li {list-style:none;}
 .gr-blue{background: #2d3e50;}
 .gr-green{background: #0bb59b;}
 .gr-black{background: #20272d;}
+.gr-gray{background: #ccc;}
 .cl-blue{color: #5bc0de;}
 .cl-green{color: #0bb59b;}
 .cl-black{color: #20272d;}
+.cl-white{color: #fff;}
 
 .gr-margin{
     padding: 0 2%;
