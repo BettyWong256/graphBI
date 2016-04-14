@@ -87,6 +87,7 @@ ol,ul,li {list-style:none;}
 
 .h{height:100%}
 .h20{height:20px;}
+.h30{height:30px;}
 .h50{height:50px;}
 .h80{height:80px;}
 .h100{height:100px;}
@@ -182,6 +183,8 @@ ol,ul,li {list-style:none;}
 .gr-green{background: #0bb59b;}
 .gr-black{background: #20272d;}
 .gr-gray{background: #ccc;}
+.bg-blue{background: #00b3ee;}
+.bg-green{background: #00AA88;}
 .cl-blue{color: #5bc0de;}
 .cl-green{color: #0bb59b;}
 .cl-black{color: #20272d;}
