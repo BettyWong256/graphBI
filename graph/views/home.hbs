@@ -61,27 +61,34 @@
         </div>
         <div class="w800 fl p5p2">
             <div class="w h40 tc lh40 ls10 f16 cl-white gr-blue" style="border-radius: 5px;"><span class="glyphicon glyphicon-comment"></span>聊天室</div>
-            <div class='p1p2' style="margin-top:-5px;border-left:1px solid #ccc;border-right:1px solid #ccc; height:455px;background: #eee;">
-                <div class="mb20">
+            <div class='p1p2 home-chat' style="margin-top:-5px;border-left:1px solid #ccc;border-right:1px solid #ccc; height:455px;background: #eee;">
+                <div class="mb20 overhidden">
                     <img src="images/pic.png" alt="照片太帅" class="w50 h50 fl">
-                    <span class="fl ml20">
-                        <span class="p5 chat-text bg-blue cl-white">asdsad</span>
-                        <p>user_id   2016-04-13 09:59:00</p>
-                    </span>
+                    <div class="fl ml20 tl">
+                        <span class="p5 chat-text bg-blue cl-white iblock">Hello!请多多指教</span>
+                        <p class="mt5 f12">user_id   2016-04-13 09:59:00</p>
+                    </div>
                 </div>
-                <div class="mb20">
+                <div class="mb20 overhidden">
+                    <img src="images/pic.png" alt="照片太帅" class="w50 h50 fl">
+                    <div class="fl ml20 tl">
+                        <span class="p5 chat-text bg-blue cl-white iblock">我现在遇到了一个问题，数据分析对于数据的收集应该遵循什么样的原则呢？才能更好地体现数据关系。</span>
+                        <p class="mt5 f12">user_id   2016-04-13 09:59:00</p>
+                    </div>
+                </div>
+                <div class="mb20 overhidden">
                     <img src="images/pic.png" alt="照片太帅" class="w50 h50 fr">
-                    <span class="fr mr20">
-                        <span class="p5 chat-text bg-green cl-white">asdsad</span>
-                        <p>user_id   2016-04-13 09:59:21</p>
+                    <span class="fr mr20 tr">
+                        <span class="p5 chat-text bg-green cl-white iblock">好深奥哦~</span>
+                        <p class="mt5 f12">user_id   2016-04-13 09:59:21</p>
                     </span>
                 </div>
             </div>
             <div class="w h40 tc lh40 ls10 f16 cl-white gr-gray p10" style="border-radius: 5px;margin-top: -5px;">
-                <form action="">
-                    <input type="text" class="form-control w600 iblock mr50" id="chat" placeholder="请输入">
-                    <button type="submit" class="btn btn-info">发送</button>
-                </form>
+                    <input type="text" class="form-control w600 iblock mr50" id="chat" placeholder="请输入" onkeydown="send(event)" >
+                    <button type="button" class="btn btn-info home-submit"
+                            data-container="body" data-toggle="chat" data-placement="top"
+                            data-content="请输入内容">发送</button>
             </div>
         </div>
     </div>

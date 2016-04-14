@@ -34,12 +34,14 @@ ol,ul,li {list-style:none;}
 .iblock{display:inline-block;}
 .hidden{visibility:hidden;}
 .none{display:none;}
+.overhidden{overflow:hidden;}
 .ell {
     word-break:keep-all;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
 }
+.break{overflow:hidden;word-wrap: break-word;}
 
 .w{width:100%}
 .w5{width:5px;}
@@ -184,9 +186,9 @@ ol,ul,li {list-style:none;}
 .gr-black{background: #20272d;}
 .gr-gray{background: #ccc;}
 .bg-blue{background: #00b3ee;}
-.bg-green{background: #00AA88;}
-.cl-blue{color: #5bc0de;}
-.cl-green{color: #0bb59b;}
+.bg-green{background: #00CC00;}
+.cl-blue{color: #0099ff;}
+.cl-green{color: #2aba2a;}
 .cl-black{color: #20272d;}
 .cl-white{color: #fff;}
 

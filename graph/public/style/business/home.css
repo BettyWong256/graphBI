@@ -45,8 +45,12 @@
 }
 
 .chat-text{
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 5px;
+}
+
+.home-chat{
+    overflow: auto;
 }
 
 
