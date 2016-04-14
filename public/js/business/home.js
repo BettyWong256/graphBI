@@ -62,7 +62,7 @@ function bindEvent(){
         window.location.href = '/login'
     });
     elem.sign.bind('click',function(){
-        window.location.href = '/sinIn'
+        window.location.href = '/signIn'
     });
     elem.start.bind('click',function(){
         window.location.href = '/draw'
