@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>1</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<script src='jquery-1.7.2.min.js'></script>
+</head>
+<body style="overflow:auto;">
+<button id='xx'>123</button>
+	<div style='width:600px;height:100%;background:#ccc;position:fixed;top:0;left:-600px;overflow:auto;z-index:999' id='data'>
+		<div style='width:1300px;height:1290px;background:yellow;'></div>
+	</div>
+	<div style='width:100%;min-height:900px;background:#333;position:absolute;left:0px;' id='main'>
+		<div style='width:80%;min-height:800px;background:#fff;margin:50px auto;'>
+			<div style='width:20px;height:300px;background:red;'></div>
+			<div style='width:20px;height:300px;background:red;'></div>
+			<div style='width:20px;height:300px;background:red;'></div>
+			<div style='width:20px;height:300px;background:red;'></div>
+		</div>
+	</div>
+
+	<script>
+	$(function(){
+		$('#xx').click(function(){
+				$('#data').css('left','0');
+				$('#main').css('left','600px');
+		})
+	})
+	</script>
+</body>
+</html>
