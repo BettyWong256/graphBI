@@ -1,0 +1,43 @@
+.draw-main{
+    overflow:auto;
+}
+
+.draw-cav{
+    width: 800px;
+    min-height: 500px;
+    overflow: auto;
+    background: #fff;
+    margin: 50px auto;
+    padding: 30px;
+}
+.cavMove{
+    display: inline-block;
+    margin-left:800px;
+    margin-right: 100px;
+}
+
+.draw-data{
+    width:600px;
+    min-height: 600px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -600px;
+}
+.draw-data-body{
+    overflow: auto;
+}
+
+#myTab{
+    margin-top: 8px;
+    border: none;
+}
+#myData{
+    width: 1200px;
+    height: 1200px;
+}
+.table td,th{
+    width:50px;
+    height:20px;
+}
