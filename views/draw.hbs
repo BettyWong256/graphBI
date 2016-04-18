@@ -11,7 +11,7 @@
                     <a role="menuitem" tabindex="-1" href="javascrip:;">字段</a>
                 </li>
                 <li role="presentation" class="add-c">
-                    <a role="menuitem" tabindex="-1" href="javascrip:;">图表</a>
+                    <a role="menuitem" tabindex="-1" href="javascrip:;" data-toggle="modal" data-target="#myGraph">图表</a>
                 </li>
             </ul>
         </div></li>
@@ -169,7 +169,7 @@
     </div>
 </div>
 
-<!-- 模态框（Modal） -->
+<!-- 模态框（文本） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -186,8 +186,29 @@
                 </button>
             </div>
         </div>
-    </div><!-- /.modal -->
+    </div>
+</div>
+<!-- 模态框（添加图表） -->
+<div class="modal fade" id="myGraph" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="images/line.png" alt="折线图" class="mr10 w100 h100 draw-add-line" data-dismiss="modal">
+                <img src="images/bar.png" alt="柱状图" class="mr10 w100 h100 draw-add-bar" data-dismiss="modal">
+                <img src="images/pie.png" alt="饼形图" class="mr10 w100 h100 draw-add-pie" data-dismiss="modal">
+                <img src="images/graph.png" alt="雷达图" class="mr10 w100 h100 draw-add-graph" data-dismiss="modal">
+                <img src="images/lines.png" alt="堆积图" class="mr10 w100 h100 draw-add-lines" data-dismiss="modal">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
+<script src="/js/plugins/echarts/echarts-all.js"></script>
 <script src="js/business/draw.js"></script>
 <link rel="stylesheet" href="style/business/draw.css">
