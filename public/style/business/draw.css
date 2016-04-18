@@ -44,6 +44,7 @@
     width:50px;
     height:20px;
 }
+#myData .table>tbody>tr>td, #myData .table>tbody>tr>th,#myData .table>thead>tr>td,#myData .table>thead>tr>th{padding: 0;}
 #mySet tr{
      line-height: 45px;
 }
@@ -56,3 +57,12 @@
     padding-left: 10px;
 }
 
+#draw-test-edit{
+    position: absolute;
+    /*z-index: 999;*/
+    width:98px;
+    height:20px;
+    border:none;
+    resize: none;
+    background: #f7f7f7;
+}
