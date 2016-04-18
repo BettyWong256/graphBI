@@ -37,7 +37,22 @@
     width: 1200px;
     height: 1200px;
 }
-.table td,th{
+#myData th{
+    background: #eee;
+}
+#myData td,th{
     width:50px;
     height:20px;
 }
+#mySet tr{
+     line-height: 45px;
+}
+#mySet th{
+    width: auto;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+}
+#mySet td{
+    padding-left: 10px;
+}
+
