@@ -66,3 +66,17 @@
     resize: none;
     background: #f7f7f7;
 }
+
+.dropdown-menu{
+    min-width: auto;
+    top:70px;
+    left:-15px;
+}
+
+.draw-edit-tab{
+    border-radius: 3px;
+    font-size:12px;
+    padding:5px;
+    background:#3c3c3c;
+    color:#fff;
+}
