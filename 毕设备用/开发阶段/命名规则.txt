@@ -30,3 +30,30 @@ max-y
 rotate-x
 true-smooth
 false-smooth
+
+
+
+data类型
+theme: 'default',
+text: '未来一周气温变化',
+size: 12,
+color: 'normal',
+subtext: '纯属虚构',
+toolShow: true,
+legendShow: true,
+legendOrient: 'horizontal',
+legendX:'center',
+legendY:'top',
+minY: 'normal',
+maxY: 'normal',
+rotateX: 0,
+smooth: false,
+legendData: ['最高气温','最低气温'],
+xData: ['周一','周二','周三','周四','周五','周六','周日'],
+yData:[ {
+    name: '最高气温',
+    arr: [11, 11, 15, 13, 12, 13, 10]
+}, {
+    name: '最低气温',
+    arr: [1, -2, 2, 5, 3, 2, 0]
+} ]

@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebf7cfbf-bac0-40e7-870c-a839e04110b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/毕设备用/开发阶段/进度.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/1.html" afterPath="$PROJECT_DIR$/毕设备用/准备/1.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/127.png" afterPath="$PROJECT_DIR$/毕设备用/准备/127.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/EasePack.min.js" afterPath="$PROJECT_DIR$/毕设备用/准备/EasePack.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/TweenLite.min.js" afterPath="$PROJECT_DIR$/毕设备用/准备/TweenLite.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/bi.rp" afterPath="$PROJECT_DIR$/毕设备用/准备/bi.rp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/component.css" afterPath="$PROJECT_DIR$/毕设备用/准备/component.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/demo-3.js" afterPath="$PROJECT_DIR$/毕设备用/准备/demo-3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/jquery-1.7.2.min.js" afterPath="$PROJECT_DIR$/毕设备用/准备/jquery-1.7.2.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/login.html" afterPath="$PROJECT_DIR$/毕设备用/准备/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/logo.png" afterPath="$PROJECT_DIR$/毕设备用/准备/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/rAF.js" afterPath="$PROJECT_DIR$/毕设备用/准备/rAF.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/start.html" afterPath="$PROJECT_DIR$/毕设备用/准备/start.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/u262.psd" afterPath="$PROJECT_DIR$/毕设备用/准备/u262.psd" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/u3.png" afterPath="$PROJECT_DIR$/毕设备用/准备/u3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/business/draw.js" afterPath="$PROJECT_DIR$/public/js/business/draw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/business/graph.js" afterPath="$PROJECT_DIR$/public/js/business/graph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/style/business/draw.css" afterPath="$PROJECT_DIR$/public/style/business/draw.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/draw.hbs" afterPath="$PROJECT_DIR$/views/draw.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt" afterPath="$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt" />
     </list>
     <ignored path="graph.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,12 +29,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="命名规则.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="命名规则.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40131578">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+            <state relative-caret-position="924">
+              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draw.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/business/draw.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+                <element signature="e#880#1146#0" expanded="false" />
+                <element signature="e#1173#1313#0" expanded="false" />
+                <element signature="e#2239#2478#0" expanded="false" />
+                <element signature="e#3801#3871#0" expanded="false" />
+                <element signature="e#4052#4351#0" expanded="false" />
+                <element signature="e#4413#4709#0" expanded="false" />
+                <element signature="e#4775#4866#0" expanded="false" />
+                <element signature="e#4920#4993#0" expanded="false" />
+                <element signature="e#5144#5217#0" expanded="false" />
+                <element signature="e#5255#5328#0" expanded="false" />
+                <element signature="e#5368#5441#0" expanded="false" />
+                <element signature="e#5733#5762#0" expanded="false" />
+                <element signature="e#5808#5856#0" expanded="false" />
+                <element signature="e#7433#7582#0" expanded="false" />
+                <element signature="e#7648#7777#0" expanded="false" />
+                <marker date="1461071578547" expanded="true" signature="1626:1652" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draw.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/style/business/draw.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="draw.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/draw.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2877">
+              <caret line="137" column="106" selection-start-line="137" selection-start-column="106" selection-end-line="137" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graph.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/business/graph.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1365">
+              <caret line="413" column="12" selection-start-line="413" selection-start-column="12" selection-end-line="413" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#45#0" expanded="false" />
+                <element signature="e#580#986#0" expanded="false" />
+                <element signature="e#2073#2283#0" expanded="false" />
+                <element signature="e#2306#3721#0" expanded="false" />
+                <element signature="e#3858#6497#0" expanded="false" />
+                <element signature="e#3877#3979#0" expanded="false" />
+                <element signature="e#4093#6408#0" expanded="false" />
+                <element signature="e#6542#9164#0" expanded="false" />
+                <element signature="e#6584#6686#0" expanded="false" />
+                <element signature="e#6800#9075#0" expanded="false" />
+                <element signature="e#9209#11294#0" expanded="false" />
+                <element signature="e#9251#9353#0" expanded="false" />
+                <element signature="e#9467#11205#0" expanded="false" />
+                <element signature="e#11341#13766#0" expanded="false" />
+                <element signature="e#11383#11485#0" expanded="false" />
+                <element signature="e#11599#13677#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,18 +154,18 @@
         <option value="$PROJECT_DIR$/public/js/plugins/echarts/theme/roma.js" />
         <option value="$PROJECT_DIR$/public/js/plugins/echarts/theme/helianthus.js" />
         <option value="$PROJECT_DIR$/public/style/common/bootstrap.min.css" />
-        <option value="$PROJECT_DIR$/public/style/business/draw.css" />
         <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/views/layout.hbs" />
         <option value="$PROJECT_DIR$/public/js/plugins/sea.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/style/business/home.css" />
         <option value="$PROJECT_DIR$/public/style/business/component.css" />
-        <option value="$PROJECT_DIR$/public/js/business/draw.js" />
-        <option value="$PROJECT_DIR$/views/draw.hbs" />
-        <option value="$PROJECT_DIR$/public/js/business/graph.js" />
         <option value="$PROJECT_DIR$/毕设备用/开发阶段/进度.txt" />
         <option value="$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt" />
+        <option value="$PROJECT_DIR$/views/draw.hbs" />
+        <option value="$PROJECT_DIR$/public/js/business/graph.js" />
+        <option value="$PROJECT_DIR$/public/style/business/draw.css" />
+        <option value="$PROJECT_DIR$/public/js/business/draw.js" />
       </list>
     </option>
   </component>
@@ -115,7 +180,7 @@
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1066" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -143,6 +208,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -220,26 +286,8 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphBI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,45 +305,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="style" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="echarts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graphBI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="echarts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="theme" />
+              <option name="myItemId" value="business" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -339,9 +353,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphBI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -349,7 +376,7 @@
     <property name="nodejs_interpreter_path" value="D:\downloads\nodejs\node.exe" />
     <property name="javascript.nodejs.core.library.configured.version" value="4.3.2" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meadowlark" />
+    <property name="last_opened_file_path" value="F:/meadowlark" />
     <property name="js-jscs-nodeInterpreter" value="D:\downloads\nodejs\node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
@@ -386,14 +413,19 @@
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -403,6 +435,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -413,10 +446,12 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>C:/Program Files/nodejs/node.exe</node-interpreter>
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
@@ -432,7 +467,9 @@
       <item index="0" class="java.lang.String" itemvalue="Node.js.bin\www" />
     </list>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\wangkun12\AppData\Roaming\Subversion</configuration>
   </component>
@@ -441,112 +478,136 @@
       <changelist id="ebf7cfbf-bac0-40e7-870c-a839e04110b3" name="Default" comment="" />
       <created>1459745626148</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1459745626148</updated>
+      <workItem from="1461067310002" duration="1833000" />
+      <workItem from="1461069164808" duration="1813000" />
+      <workItem from="1461071011560" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="vcs">
       <created>1460617758751</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
       <updated>1460617758751</updated>
     </task>
     <task id="LOCAL-00002" summary="文件整理">
       <created>1460620122501</created>
       <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1460620122501</updated>
     </task>
     <task id="LOCAL-00003" summary="登录注册页面">
       <created>1460627523644</created>
       <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
       <updated>1460627523644</updated>
     </task>
     <task id="LOCAL-00004" summary="注册页面">
       <created>1460628641430</created>
       <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
       <updated>1460628641430</updated>
     </task>
     <task id="LOCAL-00005" summary="11">
       <created>1460628684453</created>
       <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
       <updated>1460628684453</updated>
     </task>
     <task id="LOCAL-00006" summary="绘图页面">
       <created>1460703726905</created>
       <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
       <updated>1460703726905</updated>
     </task>
     <task id="LOCAL-00007" summary="绘制-参数调整">
       <created>1460950793704</created>
       <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
       <updated>1460950793704</updated>
     </task>
     <task id="LOCAL-00008" summary="绘制-可编辑表格">
       <created>1460960521404</created>
       <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
       <updated>1460960521404</updated>
     </task>
     <task id="LOCAL-00009" summary="绘制-添加">
       <created>1460964172965</created>
       <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
       <updated>1460964172965</updated>
     </task>
     <task id="LOCAL-00010" summary="绘制-标题文本修改">
       <created>1460969674936</created>
       <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
       <updated>1460969674936</updated>
     </task>
     <task id="LOCAL-00011" summary="绘制-添加图表">
       <created>1460974249213</created>
       <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
       <updated>1460974249213</updated>
     </task>
     <task id="LOCAL-00012" summary="绘制-图表完善">
       <created>1461035222241</created>
       <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
       <updated>1461035222241</updated>
     </task>
     <task id="LOCAL-00013" summary="绘制-图表类型创建">
       <created>1461050142156</created>
       <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
       <updated>1461050142156</updated>
     </task>
     <task id="LOCAL-00014" summary="绘制-图表类型创建">
       <created>1461050221482</created>
       <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
       <updated>1461050221482</updated>
     </task>
     <task id="LOCAL-00015" summary="部分样式整改">
       <created>1461052450157</created>
       <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
       <updated>1461052450157</updated>
     </task>
     <task id="LOCAL-00016" summary="图表初始化">
       <created>1461058127533</created>
       <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
       <updated>1461058127533</updated>
     </task>
     <task id="LOCAL-00017" summary="编辑参数-getjson">
       <created>1461060000047</created>
       <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
       <updated>1461060000047</updated>
     </task>
     <option name="localTasksCounter" value="18" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4277000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -558,27 +619,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983051" sideWeight="0.49503547" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18854167" sideWeight="0.49503547" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36402568" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37473235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31798714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31712472" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.50496453" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2366167" sideWeight="0.49578503" order="3" side_tool="false" content_ui="tabs" x="11" y="410" width="1898" height="229" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23572938" sideWeight="0.49578503" order="3" side_tool="false" content_ui="tabs" x="11" y="410" width="1898" height="229" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37473235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -621,14 +682,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -640,148 +701,128 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33270678">
+        <state relative-caret-position="0">
           <caret line="1666" column="0" selection-start-line="1666" selection-start-column="0" selection-end-line="1666" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/users.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/hbs/Readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60661346">
+        <state relative-caret-position="0">
           <caret line="109" column="49" selection-start-line="109" selection-start-column="49" selection-end-line="109" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/express/History.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22690992">
+        <state relative-caret-position="0">
           <caret line="2669" column="4" selection-start-line="2669" selection-start-column="4" selection-end-line="2669" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/hbs/examples/extend/views/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.5">
+        <state relative-caret-position="0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/hbs/examples/partial/views/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.21875">
+        <state relative-caret-position="0">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/hbs/examples/extend/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.368">
+        <state relative-caret-position="0">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/01企业分析/data/static/style/common/base.v2.0.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04893617">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="176" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/01企业分析/data/static/style/common/base.v2.0.css" />
     <entry file="file://$PROJECT_DIR$/public/js/common/jquery-1.7.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327869">
+        <state relative-caret-position="0">
           <caret line="1" column="9351" selection-start-line="1" selection-start-column="9345" selection-end-line="1" selection-end-column="9351" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/common/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18852459">
+        <state relative-caret-position="0">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74482757">
+        <state relative-caret-position="0">
           <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/sign.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03965517">
+        <state relative-caret-position="0">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/error.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4375">
+        <state relative-caret-position="0">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/business/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26231387">
+        <state relative-caret-position="0">
           <caret line="72" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!block;n#changeDivHeight#0" expanded="false" />
-            <element signature="n#!!block;n#changeBtnBottom#0" expanded="false" />
-            <element signature="n#!!block;n#sendChat#0" expanded="false" />
-            <marker date="1460627613479" expanded="true" signature="1096:1346" placeholder="..." />
-            <marker date="1460627613479" expanded="true" signature="1196:1340" placeholder="..." />
-            <marker date="1460627613479" expanded="true" signature="1248:1276" placeholder="..." />
-            <marker date="1460627613479" expanded="true" signature="1295:1333" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style/common/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35111877">
+        <state relative-caret-position="0">
           <caret line="3525" column="6" selection-start-line="3525" selection-start-column="6" selection-end-line="3525" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/login.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22734761">
+        <state relative-caret-position="0">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/plugins/echarts/theme/roma.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5467837">
+        <state relative-caret-position="0">
           <caret line="163" column="3" selection-start-line="163" selection-start-column="3" selection-end-line="163" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/plugins/echarts/theme/helianthus.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93274856">
+        <state relative-caret-position="0">
           <caret line="306" column="3" selection-start-line="306" selection-start-column="3" selection-end-line="306" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style/common/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.28125">
+        <state relative-caret-position="0">
           <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -792,63 +833,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style/common/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5352941">
+        <state relative-caret-position="0">
           <caret line="4" column="108337" selection-start-line="4" selection-start-column="108337" selection-end-line="4" selection-end-column="108337" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/business/start.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30717862">
+        <state relative-caret-position="0">
           <caret line="98" column="36" selection-start-line="98" selection-start-column="36" selection-end-line="98" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/plugins/sea.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04144144">
+        <state relative-caret-position="0">
           <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style/business/draw.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3387096">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/layout.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13193117">
+        <state relative-caret-position="0">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/plugins/echarts/echarts-all.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33271718">
+        <state relative-caret-position="0">
           <caret line="7" column="9923" selection-start-line="7" selection-start-column="9919" selection-end-line="7" selection-end-column="9923" />
           <folding />
         </state>
@@ -861,139 +888,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style/business/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.967742">
+        <state relative-caret-position="0">
           <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7419355">
+        <state relative-caret-position="0">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/style/business/component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6">
+        <state relative-caret-position="0">
           <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.hbs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16225749">
+        <state relative-caret-position="0">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.821428">
+        <state relative-caret-position="0">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/draw.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.693548">
-          <caret line="167" column="18" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/business/draw.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="14.566667">
-          <caret line="101" column="34" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-            <element signature="e#404#672#0" expanded="false" />
-            <element signature="e#711#977#0" expanded="false" />
-            <element signature="e#1004#1144#0" expanded="false" />
-            <element signature="e#1684#1878#0" expanded="false" />
-            <element signature="e#1912#2151#0" expanded="false" />
-            <element signature="e#3474#3544#0" expanded="false" />
-            <element signature="e#3725#4024#0" expanded="false" />
-            <element signature="e#4086#4382#0" expanded="false" />
-            <element signature="e#4448#4539#0" expanded="false" />
-            <element signature="e#4593#4666#0" expanded="false" />
-            <element signature="e#4817#4890#0" expanded="false" />
-            <element signature="e#4928#5001#0" expanded="false" />
-            <element signature="e#5041#5114#0" expanded="false" />
-            <element signature="e#5406#5435#0" expanded="false" />
-            <element signature="e#5481#5529#0" expanded="false" />
-            <element signature="e#7106#7255#0" expanded="false" />
-            <element signature="e#7321#7450#0" expanded="false" />
-            <marker date="1461058493785" expanded="true" signature="1457:1469" placeholder="..." />
-            <marker date="1461058493785" expanded="true" signature="1457:1483" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/business/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="438" column="37" selection-start-line="438" selection-start-column="37" selection-end-line="438" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#45#0" expanded="false" />
-            <element signature="e#580#986#0" expanded="false" />
-            <element signature="e#2072#2282#0" expanded="false" />
-            <element signature="e#2305#3720#0" expanded="false" />
-            <element signature="e#3857#6496#0" expanded="false" />
-            <element signature="e#3876#3978#0" expanded="false" />
-            <element signature="e#4092#6407#0" expanded="false" />
-            <element signature="e#6541#9163#0" expanded="false" />
-            <element signature="e#6583#6685#0" expanded="false" />
-            <element signature="e#6799#9074#0" expanded="false" />
-            <element signature="e#9208#11293#0" expanded="false" />
-            <element signature="e#9250#9352#0" expanded="false" />
-            <element signature="e#9466#11204#0" expanded="false" />
-            <element signature="e#11340#13765#0" expanded="false" />
-            <element signature="e#11382#11484#0" expanded="false" />
-            <element signature="e#11598#13676#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/EasePack.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/jquery-1.7.2.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,25 +956,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/开发阶段/进度.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11348684">
+        <state relative-caret-position="0">
           <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/rAF.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/demo-3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,17 +982,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/准备/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2482639">
+        <state relative-caret-position="0">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40131578">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        <state relative-caret-position="924">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/style/business/draw.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/draw.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2877">
+          <caret line="137" column="106" selection-start-line="137" selection-start-column="106" selection-end-line="137" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/business/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="413" column="12" selection-start-line="413" selection-start-column="12" selection-end-line="413" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <element signature="e#580#986#0" expanded="false" />
+            <element signature="e#2073#2283#0" expanded="false" />
+            <element signature="e#2306#3721#0" expanded="false" />
+            <element signature="e#3858#6497#0" expanded="false" />
+            <element signature="e#3877#3979#0" expanded="false" />
+            <element signature="e#4093#6408#0" expanded="false" />
+            <element signature="e#6542#9164#0" expanded="false" />
+            <element signature="e#6584#6686#0" expanded="false" />
+            <element signature="e#6800#9075#0" expanded="false" />
+            <element signature="e#9209#11294#0" expanded="false" />
+            <element signature="e#9251#9353#0" expanded="false" />
+            <element signature="e#9467#11205#0" expanded="false" />
+            <element signature="e#11341#13766#0" expanded="false" />
+            <element signature="e#11383#11485#0" expanded="false" />
+            <element signature="e#11599#13677#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/business/draw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#45#0" expanded="false" />
+            <element signature="e#880#1146#0" expanded="false" />
+            <element signature="e#1173#1313#0" expanded="false" />
+            <element signature="e#2239#2478#0" expanded="false" />
+            <element signature="e#3801#3871#0" expanded="false" />
+            <element signature="e#4052#4351#0" expanded="false" />
+            <element signature="e#4413#4709#0" expanded="false" />
+            <element signature="e#4775#4866#0" expanded="false" />
+            <element signature="e#4920#4993#0" expanded="false" />
+            <element signature="e#5144#5217#0" expanded="false" />
+            <element signature="e#5255#5328#0" expanded="false" />
+            <element signature="e#5368#5441#0" expanded="false" />
+            <element signature="e#5733#5762#0" expanded="false" />
+            <element signature="e#5808#5856#0" expanded="false" />
+            <element signature="e#7433#7582#0" expanded="false" />
+            <element signature="e#7648#7777#0" expanded="false" />
+            <marker date="1461071578547" expanded="true" signature="1626:1652" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

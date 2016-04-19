@@ -21,8 +21,11 @@ define( function ( require, exports ) {
         var height = window.innerHeight;
         var showHeight = height - 180;
         $('.draw-main').css('min-height', showHeight + 'px');
-        $('.draw-data').height(showHeight + 'px');
-        $('.draw-data-body').height($('.draw-data').height() - 50);
+        var heights = document.body.scrollHeight;
+        $('.draw-data').height(heights - 180 + 'px');
+        $('.draw-data-body').height(heights - 230 + 'px');
+        // $('.draw-data').height(showHeight + 'px');
+        // $('.draw-data-body').height($('.draw-data').height() - 50);
     };
 
 //表格可编辑
@@ -54,8 +57,11 @@ define( function ( require, exports ) {
     function fixedTop() {
         var scrollH = $(document).scrollTop();
         var fixTop = 80 - scrollH;
+
         if (fixTop <= 0) {
             fixTop = 0;
+            $('.draw-data').height($('.draw-main').height() - scrollH +80);
+            $('.draw-data-body').height($('.draw-main').height() - scrollH +30);
         }
         $('.draw-data').css('top', fixTop);
     };

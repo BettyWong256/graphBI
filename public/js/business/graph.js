@@ -32,7 +32,7 @@ define( function ( require, exports ) {
             theme: 'default',
             text: '未来一周气温变化',
             size: 12,
-            color: 'normal',
+            color: "#000000",
             subtext: '纯属虚构',
             toolShow: true,
             legendShow: true,
@@ -443,6 +443,18 @@ define( function ( require, exports ) {
             }
         }
         $('#'+editParam.data.theme+'-theme').attr('checked','checked');
+        $('#title').val(editParam.data.text);
+        $('#title-size').val(editParam.data.size);
+        $('#title-color').val(editParam.data.color);
+        $('#subtitle').val(editParam.data.subtext);
+        if(editParam.data.toolShow){$('#show-tool').attr('checked','checked');}
+        else{$('#no-tool').attr('checked','checked');}
+        if(editParam.data.legendShow){$('#show-legend').attr('checked','checked');}
+        else{$('#no-legend').attr('checked','checked');}
+        $('#rotate-x').val(editParam.data.rotateX);
+        if(editParam.data.smooth){$('#true-smooth').attr('checked','checked');}
+        else{$('#false-smooth').attr('checked','checked');}
+
 
 
     };
