@@ -19,11 +19,11 @@ router.get('/signIn', function(req, res, next) {
 });
 
 router.get('/draw', function(req, res, next) {
-  res.render('draw', { title: '格拉夫BI数据可视化'});
+  res.render('draw', { title: '格拉夫绘制图表'});
 });
 
 router.get('/users', function(req, res, next) {
-  res.render('users', { title: '格拉夫BI数据可视化' });
+  res.render('users', { title: '格拉夫-个人中心' });
 });
 
 
