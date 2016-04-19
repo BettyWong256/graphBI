@@ -4,8 +4,7 @@
 define( function ( require, exports ) {
 
     function graphLine(id,param){
-        var xx = document.getElementById(id);
-        var myChartLine = echarts.init(xx);
+        var myChartLine = echarts.init(document.getElementById(id));
         var option = {
             tooltip: {
                 trigger: 'axis'
