@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebf7cfbf-bac0-40e7-870c-a839e04110b3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/毕设备用/开发阶段/进度.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/business/draw.js" afterPath="$PROJECT_DIR$/public/js/business/draw.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/business/graph.js" afterPath="$PROJECT_DIR$/public/js/business/graph.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/draw.hbs" afterPath="$PROJECT_DIR$/views/draw.hbs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/1.html" afterPath="$PROJECT_DIR$/毕设备用/准备/1.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/127.png" afterPath="$PROJECT_DIR$/毕设备用/准备/127.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/EasePack.min.js" afterPath="$PROJECT_DIR$/毕设备用/准备/EasePack.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/TweenLite.min.js" afterPath="$PROJECT_DIR$/毕设备用/准备/TweenLite.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/bi.rp" afterPath="$PROJECT_DIR$/毕设备用/准备/bi.rp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/component.css" afterPath="$PROJECT_DIR$/毕设备用/准备/component.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/demo-3.js" afterPath="$PROJECT_DIR$/毕设备用/准备/demo-3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/jquery-1.7.2.min.js" afterPath="$PROJECT_DIR$/毕设备用/准备/jquery-1.7.2.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/login.html" afterPath="$PROJECT_DIR$/毕设备用/准备/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/logo.png" afterPath="$PROJECT_DIR$/毕设备用/准备/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/rAF.js" afterPath="$PROJECT_DIR$/毕设备用/准备/rAF.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/start.html" afterPath="$PROJECT_DIR$/毕设备用/准备/start.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/u262.psd" afterPath="$PROJECT_DIR$/毕设备用/准备/u262.psd" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/毕设备用/u3.png" afterPath="$PROJECT_DIR$/毕设备用/准备/u3.png" />
     </list>
     <ignored path="graph.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,72 +39,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="draw.hbs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/draw.hbs">
+      <file leaf-file-name="命名规则.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.693548">
-              <caret line="167" column="18" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="draw.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/business/draw.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="14.566667">
-              <caret line="101" column="34" selection-start-line="101" selection-start-column="34" selection-end-line="101" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-                <element signature="e#404#672#0" expanded="false" />
-                <element signature="e#711#977#0" expanded="false" />
-                <element signature="e#1004#1144#0" expanded="false" />
-                <element signature="e#1684#1878#0" expanded="false" />
-                <element signature="e#1912#2151#0" expanded="false" />
-                <element signature="e#3474#3544#0" expanded="false" />
-                <element signature="e#3725#4024#0" expanded="false" />
-                <element signature="e#4086#4382#0" expanded="false" />
-                <element signature="e#4448#4539#0" expanded="false" />
-                <element signature="e#4593#4666#0" expanded="false" />
-                <element signature="e#4817#4890#0" expanded="false" />
-                <element signature="e#4928#5001#0" expanded="false" />
-                <element signature="e#5041#5114#0" expanded="false" />
-                <element signature="e#5406#5435#0" expanded="false" />
-                <element signature="e#5481#5529#0" expanded="false" />
-                <element signature="e#7106#7255#0" expanded="false" />
-                <element signature="e#7321#7450#0" expanded="false" />
-                <marker date="1461058493785" expanded="true" signature="1457:1469" placeholder="..." />
-                <marker date="1461058493785" expanded="true" signature="1457:1483" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/js/business/graph.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1555024">
-              <caret line="441" column="17" selection-start-line="441" selection-start-column="17" selection-end-line="441" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#45#0" expanded="false" />
-                <element signature="e#580#986#0" expanded="false" />
-                <element signature="e#2072#2282#0" expanded="false" />
-                <element signature="e#2305#3720#0" expanded="false" />
-                <element signature="e#3857#6496#0" expanded="false" />
-                <element signature="e#3876#3978#0" expanded="false" />
-                <element signature="e#4092#6407#0" expanded="false" />
-                <element signature="e#6541#9163#0" expanded="false" />
-                <element signature="e#6583#6685#0" expanded="false" />
-                <element signature="e#6799#9074#0" expanded="false" />
-                <element signature="e#9208#11293#0" expanded="false" />
-                <element signature="e#9250#9352#0" expanded="false" />
-                <element signature="e#9466#11204#0" expanded="false" />
-                <element signature="e#11340#13765#0" expanded="false" />
-                <element signature="e#11382#11484#0" expanded="false" />
-                <element signature="e#11598#13676#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.40131578">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,6 +99,8 @@
         <option value="$PROJECT_DIR$/public/js/business/draw.js" />
         <option value="$PROJECT_DIR$/views/draw.hbs" />
         <option value="$PROJECT_DIR$/public/js/business/graph.js" />
+        <option value="$PROJECT_DIR$/毕设备用/开发阶段/进度.txt" />
+        <option value="$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt" />
       </list>
     </option>
   </component>
@@ -203,6 +158,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="graphBI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphBI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="毕设备用" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="开发阶段" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -400,6 +373,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Nodetest\graphBI\毕设备用\准备" />
       <recent name="D:\Nodetest\graphBI\public\js\plugins" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -565,7 +539,13 @@
       <option name="project" value="LOCAL" />
       <updated>1461058127533</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="编辑参数-getjson">
+      <created>1461060000047</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1461060000047</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
@@ -581,13 +561,13 @@
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14857745" sideWeight="0.49503547" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983051" sideWeight="0.49503547" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36402568" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37473235" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.52141327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31798714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -629,7 +609,8 @@
     <MESSAGE value="绘制-图表类型创建" />
     <MESSAGE value="部分样式整改" />
     <MESSAGE value="图表初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="图表初始化" />
+    <MESSAGE value="编辑参数-getjson" />
+    <option name="LAST_COMMIT_MESSAGE" value="编辑参数-getjson" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -638,73 +619,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/style/business/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/style/business/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/business/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#changeDivHeight#0" expanded="false" />
-            <element signature="n#!!block;n#changeBtnBottom#0" expanded="false" />
-            <element signature="n#!!block;n#sendChat#0" expanded="false" />
-            <marker date="1460627613479" expanded="true" signature="1096:1346" placeholder="..." />
-            <marker date="1460627613479" expanded="true" signature="1196:1340" placeholder="..." />
-            <marker date="1460627613479" expanded="true" signature="1248:1276" placeholder="..." />
-            <marker date="1460627613479" expanded="true" signature="1295:1333" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/home.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -832,13 +746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/毕设备用/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23424494">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/style/common/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35111877">
@@ -866,6 +773,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.93274856">
           <caret line="306" column="3" selection-start-line="306" selection-start-column="3" selection-end-line="306" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1034,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/business/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1555024">
-          <caret line="441" column="17" selection-start-line="441" selection-start-column="17" selection-end-line="441" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="438" column="37" selection-start-line="438" selection-start-column="37" selection-end-line="438" selection-end-column="37" />
           <folding>
             <element signature="e#0#45#0" expanded="false" />
             <element signature="e#580#986#0" expanded="false" />
@@ -1054,6 +962,88 @@
             <element signature="e#11382#11484#0" expanded="false" />
             <element signature="e#11598#13676#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/EasePack.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/jquery-1.7.2.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/开发阶段/进度.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11348684">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/rAF.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/demo-3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/127.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/准备/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2482639">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/毕设备用/开发阶段/命名规则.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40131578">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
