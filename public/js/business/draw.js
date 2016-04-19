@@ -4,7 +4,10 @@
 define( function ( require, exports ) {
 
     var echarts = require('/js/plugins/echarts/echarts-all.js');
+
     var MyGraph = require('/js/business/graph.js');
+
+
 
 
 
@@ -103,6 +106,10 @@ define( function ( require, exports ) {
     };
 //绑定事件
     function bindEvent() {
+        elem.save.click(function(){
+            console.log(dataPool);
+        })
+
         //运行
         elem.change.click(function () {
             postJson();
@@ -133,25 +140,26 @@ define( function ( require, exports ) {
             editObj.text(value);
 
         });
+        //添加图表
         elem.line.click(function () {
             addGraph();
-            MyGraph.init('1',editId,{});
+            MyGraph.init('1',editId);
         });
         elem.lines.click(function () {
             addGraph();
-            MyGraph.init('2',editId,{});
+            MyGraph.init('2',editId);
         });
         elem.bar.click(function () {
             addGraph();
-            MyGraph.init('3',editId,{});
+            MyGraph.init('3',editId);
         });
         elem.pie.click(function () {
             addGraph();
-            MyGraph.init('4',editId,{});
+            MyGraph.init('4',editId);
         });
         elem.graph.click(function () {
             addGraph();
-            MyGraph.init('5',editId,{});
+            MyGraph.init('5',editId);
         })
 
 
@@ -175,10 +183,11 @@ define( function ( require, exports ) {
     });
 
 
-//当浏览器窗口大小改变时，设置显示内容的高度
+//当浏览器窗口大小改变时
     window.onresize = function () {
         mainHeight();
     };
+//当浏览器滑动时
     window.onscroll = function () {
         tableSave();
         fixedTop();
@@ -186,6 +195,7 @@ define( function ( require, exports ) {
     $('.draw-data-body').scroll(function () {
         tableSave();
     });
+
 
     function newT() {
         $(document).on("mousemove", ".editable", function () {
