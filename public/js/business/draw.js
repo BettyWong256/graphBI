@@ -3,9 +3,9 @@
  */
 
 var elem = {};
+var graphID = Math.ceil(Math.random()*10); //图表id随机数
 var cavObj = $('.draw-cav');//画布
 var editObj = {};
-var graphID = Math.ceil(Math.random()*10);
 var editId = null;
 
 //高度自适应
@@ -13,7 +13,8 @@ function mainHeight(){
     var height = window.innerHeight;
     var showHeight = height - 180;
     $('.draw-main').css('min-height' , showHeight+'px');
-    $('.draw-data-body').height($('.draw-main').height()- 50);
+    $('.draw-data').height(showHeight+'px');
+    $('.draw-data-body').height($('.draw-data').height()- 50);
 };
 
 //表格可编辑
@@ -34,11 +35,41 @@ function tableSave(){
     $this.remove();
 };
 
+//添加图表画布
 function addGraph(){
     cavObj.append('<div class="editable mb20"><span class="draw-edit-tab none"><a href="javascript:;" class="mr5 draw-edit-data">编辑数据</a><a href="javascript:;" class="mr5 draw-edit-set">参数设置</a><a href="javascript:;" class="mr5 draw-edit-delete">删除</a></span><div style="width:740px;height: 300px;" class="new-graph" id="graph'+ graphID +'"></div></div>');
     editId = $('.new-graph').eq($('.new-graph').size()-1).attr('id');
     graphID++;
+};
+
+//判断图表编辑框位置
+function fixedTop(){
+    var scrollH = $(document).scrollTop();
+    var fixTop = 80 - scrollH;
+    if(fixTop <=0){ fixTop = 0;}
+    $('.draw-data').css('top',fixTop);
+};
+
+//表格框清空
+function setEdit(){
+    $('.draw-data-body').find('.table').find('th').each(function(){
+        $(this).text('');
+    });
+    $('.draw-data-body').find('.table').find('td').each(function(){
+        $(this).text('');
+    });
 }
+
+//当前数据获取
+function getJson(){};
+
+//提取更改数据
+function postJson(){};
+
+
+
+
+
 
 //获取页面元素
 function getElem(){
@@ -68,9 +99,10 @@ function getElem(){
 function bindEvent(){
     //运行
     elem.change.click(function(){
+        postJson();
         $('.active').removeClass('active');
         $('.draw-cav').removeClass('cavMove');
-        $('.draw-data').css('left','-600px');
+        $('.draw-data').hide();
     });
     //可编辑表格
     elem.editth.bind('click',function(){
@@ -476,6 +508,7 @@ window.onresize=function(){
 };
 window.onscroll = function () {
    tableSave();
+   fixedTop();
 };
 $('.draw-data-body').scroll(function(){
     tableSave();
@@ -493,25 +526,33 @@ function newT(){
 
 //编辑数据
     $(document).on("click", '.draw-edit-data', function() {
+        setEdit();
+        getJson();
         editId = $(this).parents('.editable').find('.new-graph').attr('id');
         $('.active').removeClass('active').removeClass('in');
         $('.draw-cav').addClass('cavMove');
-        $('.draw-data').css('left','0');
+        fixedTop();
+        $('.draw-data').show();
         $('.myData').addClass('active').addClass('in');
         $('#myData').addClass('active').addClass('in');
     });
 //参数设置
     $(document).on("click", '.draw-edit-set', function() {
+        setEdit();
+        getJson();
         editId = $(this).parents('.editable').find('.new-graph').attr('id');
         $('.active').removeClass('active').removeClass('in');
         $('.draw-cav').addClass('cavMove');
-        $('.draw-data').css('left','0');
+        fixedTop();
+        $('.draw-data').show();
         $('.mySet').addClass('active').addClass('in');
         $('#mySet').addClass('active').addClass('in');
     });
 //删除
     $(document).on("click", ".draw-edit-delete", function() {
         $(this).parents('.editable').remove();
+        $('.draw-data').hide();
+        $('.draw-cav').removeClass('cavMove');
     });
 //编辑
     $(document).on("click", ".draw-edit", function() {
