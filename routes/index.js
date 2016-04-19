@@ -19,7 +19,7 @@ router.get('/signIn', function(req, res, next) {
 });
 
 router.get('/draw', function(req, res, next) {
-  res.render('draw', { title: '格拉夫BI数据可视化' });
+  res.render('draw', { title: '格拉夫BI数据可视化'});
 });
 
 router.get('/users', function(req, res, next) {
