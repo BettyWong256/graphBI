@@ -29,7 +29,7 @@ define( function ( require, exports ) {
     //绘制线形图
     function graphLine(id,param){
         var data = {
-            theme: null,
+            theme: 'default',
             text: '未来一周气温变化',
             size: 12,
             color: 'normal',
@@ -425,5 +425,35 @@ define( function ( require, exports ) {
             case '5': graphGraph(id,param);break;
             default : return false;
         }
+    };
+
+
+    /**当前数据获取
+     * 根据全局变量dataPool填充编辑框 --填充完毕
+     * @param id 编辑内容id
+     * editParam.data 当前编辑图的数据对象
+     */
+    exports.getJson = function(id) {
+        var editParam = {};
+        for(var i=0;i< dataPool.length;i++){
+            if(dataPool[i].id == id){
+                for(var key in dataPool[i]){
+                    editParam[key] = dataPool[i][key];
+                }
+            }
+        }
+        $('#'+editParam.data.theme+'-theme').attr('checked','checked');
+
+
+    };
+
+    /**提取更改数据
+     * 根据编辑框修改全局变量dataPool --返回
+     * @param id 编辑内容id
+     */
+    exports.postJson = function(id) {
+
+
+
     };
 } );

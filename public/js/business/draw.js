@@ -4,7 +4,6 @@
 define( function ( require, exports ) {
 
     var echarts = require('/js/plugins/echarts/echarts-all.js');
-
     var MyGraph = require('/js/business/graph.js');
 
 
@@ -71,13 +70,6 @@ define( function ( require, exports ) {
         });
     }
 
-//当前数据获取
-    function getJson() {
-    };
-
-//提取更改数据
-    function postJson() {
-    };
 
 
 //获取页面元素
@@ -112,7 +104,7 @@ define( function ( require, exports ) {
 
         //运行
         elem.change.click(function () {
-            postJson();
+            MyGraph.postJson();
             $('.active').removeClass('active');
             $('.draw-cav').removeClass('cavMove');
             $('.draw-data').hide();
@@ -210,8 +202,9 @@ define( function ( require, exports ) {
 //编辑数据
         $(document).on("click", '.draw-edit-data', function () {
             setEdit();
-            getJson();
             editId = $(this).parents('.editable').find('.new-graph').attr('id');
+            MyGraph.getJson(editId);
+
             $('.active').removeClass('active').removeClass('in');
             $('.draw-cav').addClass('cavMove');
             fixedTop();
@@ -222,8 +215,9 @@ define( function ( require, exports ) {
 //参数设置
         $(document).on("click", '.draw-edit-set', function () {
             setEdit();
-            getJson();
             editId = $(this).parents('.editable').find('.new-graph').attr('id');
+            MyGraph.getJson(editId);
+
             $('.active').removeClass('active').removeClass('in');
             $('.draw-cav').addClass('cavMove');
             fixedTop();
