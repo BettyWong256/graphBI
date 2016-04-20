@@ -22,12 +22,23 @@ define( function ( require, exports ) {
             default: return null;
         }
     }
+    //主题背景色设置
+    function bgcolor(str){
+        $('.draw-cav').css('background','#fff');
+        $('.draw-cav').css('color','#000');
+        if(str == 'dark'){
+            $('.draw-cav').css('background-color','rgb(27, 27, 27)');
+            $('.draw-cav').css('color','#fff');
+        }else if(str =='helianthus'){
+            $('.draw-cav').css('background-color','rgb(242, 242, 230)');
+        }
+    }
 
 
 
 
     //绘制线形图
-    function graphLine(id,param){
+    function graphLine(state,id,param){
         var data = {
             theme: 'default',
             text: '未来一周气温变化',
@@ -118,7 +129,10 @@ define( function ( require, exports ) {
             series : mySeries
         };
         myChartLine.setOption(option);
-        dataPool.push({id:id,data:data});
+        if(!param){
+            dataPool.push({id:id,data:data,state:state});
+        }
+
     };
     //绘制面积堆积图
     function graphLines(id,param){
@@ -197,7 +211,6 @@ define( function ( require, exports ) {
             ]
         };
         myChartLine.setOption(option);
-        dataPool.push({id:id,data:param});
     };
     //绘制柱形图
     function graphBar(id,param){
@@ -277,7 +290,6 @@ define( function ( require, exports ) {
             ]
         };
         myChartLine.setOption(option);
-        dataPool.push({id:id,data:param});
     };
     //绘制扇形图
     function graphPie(id,param){
@@ -342,7 +354,6 @@ define( function ( require, exports ) {
             ]
         };
         myChartLine.setOption(option);
-        dataPool.push({id:id,data:param});
     };
     //绘制雷达图
     function graphGraph(id,param){
@@ -407,7 +418,6 @@ define( function ( require, exports ) {
                 ]
             };
         myChartLine.setOption(option);
-        dataPool.push({id:id,data:param});
     };
 
     /**
@@ -416,14 +426,18 @@ define( function ( require, exports ) {
      * @param id id
      * @param param 数据对象
      */
+
     exports.init = function(state,id,param){
         switch (state){
-            case '1': graphLine(id,param);break;
-            case '2': graphLines(id,param);break;
-            case '3': graphBar(id,param);break;
-            case '4': graphPie(id,param);break;
-            case '5': graphGraph(id,param);break;
+            case '1': graphLine(state,id,param);break;
+            case '2': graphLines(state,id,param);break;
+            case '3': graphBar(state,id,param);break;
+            case '4': graphPie(state,id,param);break;
+            case '5': graphGraph(state,id,param);break;
             default : return false;
+        }
+        if(param){
+            bgcolor(param.theme);
         }
     };
 
@@ -441,7 +455,7 @@ define( function ( require, exports ) {
                     editParam[key] = dataPool[i][key];
                 }
             }
-        }
+        };
         $('#'+editParam.data.theme+'-theme').attr('checked','checked');
         $('#title').val(editParam.data.text);
         $('#title-size').val(editParam.data.size);
@@ -451,10 +465,31 @@ define( function ( require, exports ) {
         else{$('#no-tool').attr('checked','checked');}
         if(editParam.data.legendShow){$('#show-legend').attr('checked','checked');}
         else{$('#no-legend').attr('checked','checked');}
+        $('#'+ editParam.data.legendOrient +'-orient').attr('checked','checked');
+        $('#'+ editParam.data.legendX +'-legend').attr('checked','checked');
+        $('#'+ editParam.data.legendY +'-legend').attr('checked','checked');
+        if( editParam.data.minY != 'normal'){$('#min-y').val(editParam.data.minY );}
+        if( editParam.data.minX != 'normal'){$('#min-x').val(editParam.data.minX );}
         $('#rotate-x').val(editParam.data.rotateX);
         if(editParam.data.smooth){$('#true-smooth').attr('checked','checked');}
         else{$('#false-smooth').attr('checked','checked');}
 
+
+        //x轴
+        for(var i=0;i<editParam.data.xData.length;i++){
+            $('#myData').find('tr').eq(0).find('th').eq(i+1).text(editParam.data.xData[i]);
+        }
+        //y轴
+        for(var j=0;j<editParam.data.legendData.length;j++){
+            $('#myData').find('tr').eq(j+1).find('th').text(editParam.data.legendData[j]);
+            for(var z=0;z<editParam.data.yData.length;z++){
+                if(editParam.data.legendData[j] == editParam.data.yData[z].name){
+                    for(var m=0;m<editParam.data.yData[z].arr.length;m++){
+                        $('#myData').find('tr').eq(j+1).find('td').eq(m).text(editParam.data.yData[z].arr[m]);
+                    }
+                }
+            }
+        }
 
 
     };
@@ -464,6 +499,52 @@ define( function ( require, exports ) {
      * @param id 编辑内容id
      */
     exports.postJson = function(id) {
+        for(var i=0;i< dataPool.length;i++){
+            if(dataPool[i].id == id){
+                dataPool[i].data.theme = $('input[name="theme"]:checked').val();
+                dataPool[i].data.text = $('#title').val();
+                dataPool[i].data.size = $('#title-size').val();
+                dataPool[i].data.color = $('#title-color').val();
+                dataPool[i].data.subtext = $('#subtitle').val();
+                dataPool[i].data.toolShow = $('input[name="toolbox"]:checked').val() == 'true'? true : false;
+                dataPool[i].data.legendShow = $('input[name="legend"]:checked').val() == 'true'? true : false;
+                dataPool[i].data.legendOrient = $('input[name="orient"]:checked').val();
+                dataPool[i].data.legendX = $('input[name="legend-x"]:checked').val();
+                dataPool[i].data.legendY = $('input[name="legend-y"]:checked').val();
+                if($('#min-y').val()) dataPool[i].data.minY = $('#min-y').val();
+                if($('#max-y').val()) dataPool[i].data.maxY = $('#max-y').val();
+                dataPool[i].data.rotateX = $('#rotate-x').val();
+                dataPool[i].data.smooth = $('input[name="smooth"]:checked').val() == 'true'? true : false;
+
+
+                dataPool[i].data.legendData = [];
+                dataPool[i].data.xData = [];
+                dataPool[i].data.yData = [];
+                var editIn = $('#myData').find('.table');
+                var x= 1,y =1;
+                while(editIn.find('tr').eq(0).find('th').eq(x).text()!=''){
+                    dataPool[i].data.xData.push(editIn.find('tr').eq(0).find('th').eq(x).text());
+                    x++;
+                }
+                while(editIn.find('tr').eq(y).find('th').text()!=''){
+                    var par = {};
+                    par.arr=[];
+                    dataPool[i].data.legendData.push(editIn.find('tr').eq(y).find('th').text());
+                    par.name = editIn.find('tr').eq(y).find('th').text();
+                    for(var xy=0; xy<dataPool[i].data.xData.length; xy++){
+                        par.arr.push(editIn.find('tr').eq(y).find('td').eq(xy).text())
+                    }
+                    dataPool[i].data.yData.push(par);
+                    y++;
+                }
+
+
+                exports.init(dataPool[i].state,dataPool[i].id,dataPool[i].data);
+                break;
+            }
+        };
+
+
 
 
 

@@ -21,11 +21,6 @@ define( function ( require, exports ) {
         var height = window.innerHeight;
         var showHeight = height - 180;
         $('.draw-main').css('min-height', showHeight + 'px');
-        var heights = document.body.scrollHeight;
-        $('.draw-data').height(heights - 180 + 'px');
-        $('.draw-data-body').height(heights - 230 + 'px');
-        // $('.draw-data').height(showHeight + 'px');
-        // $('.draw-data-body').height($('.draw-data').height() - 50);
     };
 
 //表格可编辑
@@ -64,6 +59,12 @@ define( function ( require, exports ) {
             $('.draw-data-body').height($('.draw-main').height() - scrollH +30);
         }
         $('.draw-data').css('top', fixTop);
+    };
+//编辑框高度
+    function editHeight(){
+        var heights = document.body.scrollHeight;
+        $('.draw-data').height(heights - 180 + 'px');
+        $('.draw-data-body').height(heights - 230 + 'px');
     };
 
 //表格框清空
@@ -110,7 +111,8 @@ define( function ( require, exports ) {
 
         //运行
         elem.change.click(function () {
-            MyGraph.postJson();
+            tableSave();
+            MyGraph.postJson(editId);
             $('.active').removeClass('active');
             $('.draw-cav').removeClass('cavMove');
             $('.draw-data').hide();
@@ -166,6 +168,7 @@ define( function ( require, exports ) {
 //初始化页面
     function pageLoad() {
         mainHeight();
+        editHeight();
     };
 
 
@@ -184,6 +187,7 @@ define( function ( require, exports ) {
 //当浏览器窗口大小改变时
     window.onresize = function () {
         mainHeight();
+        editHeight();
     };
 //当浏览器滑动时
     window.onscroll = function () {
@@ -207,6 +211,7 @@ define( function ( require, exports ) {
 
 //编辑数据
         $(document).on("click", '.draw-edit-data', function () {
+            editHeight();
             setEdit();
             editId = $(this).parents('.editable').find('.new-graph').attr('id');
             MyGraph.getJson(editId);
@@ -220,6 +225,7 @@ define( function ( require, exports ) {
         });
 //参数设置
         $(document).on("click", '.draw-edit-set', function () {
+            editHeight();
             setEdit();
             editId = $(this).parents('.editable').find('.new-graph').attr('id');
             MyGraph.getJson(editId);
@@ -233,9 +239,16 @@ define( function ( require, exports ) {
         });
 //删除
         $(document).on("click", ".draw-edit-delete", function () {
+            editId = $(this).parents('.editable').find('.new-graph').attr('id');
+            for(var i=0;i< dataPool.length;i++){
+                if(dataPool[i].id == editId){
+                    dataPool.splice(i,1);
+                }
+            };
             $(this).parents('.editable').remove();
             $('.draw-data').hide();
             $('.draw-cav').removeClass('cavMove');
+            console.log(dataPool);
         });
 //编辑
         $(document).on("click", ".draw-edit", function () {
