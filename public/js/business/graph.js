@@ -456,6 +456,7 @@ define( function ( require, exports ) {
                 }
             }
         };
+        $('input[type="radio"]').removeAttr('checked');
         $('#'+editParam.data.theme+'-theme').attr('checked','checked');
         $('#title').val(editParam.data.text);
         $('#title-size').val(editParam.data.size);

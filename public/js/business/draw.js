@@ -142,22 +142,37 @@ define( function ( require, exports ) {
         });
         //添加图表
         elem.line.click(function () {
+
+            $('.draw-data').hide();
+            $('.draw-cav').removeClass('cavMove');
             addGraph();
             MyGraph.init('1',editId);
         });
         elem.lines.click(function () {
+
+            $('.draw-data').hide();
+            $('.draw-cav').removeClass('cavMove');
             addGraph();
             MyGraph.init('2',editId);
         });
         elem.bar.click(function () {
+
+            $('.draw-data').hide();
+            $('.draw-cav').removeClass('cavMove');
             addGraph();
             MyGraph.init('3',editId);
         });
         elem.pie.click(function () {
+
+            $('.draw-data').hide();
+            $('.draw-cav').removeClass('cavMove');
             addGraph();
             MyGraph.init('4',editId);
         });
         elem.graph.click(function () {
+
+            $('.draw-data').hide();
+            $('.draw-cav').removeClass('cavMove');
             addGraph();
             MyGraph.init('5',editId);
         })
@@ -214,21 +229,20 @@ define( function ( require, exports ) {
             editHeight();
             setEdit();
             editId = $(this).parents('.editable').find('.new-graph').attr('id');
-            MyGraph.getJson(editId);
-
             $('.active').removeClass('active').removeClass('in');
             $('.draw-cav').addClass('cavMove');
             fixedTop();
             $('.draw-data').show();
             $('.myData').addClass('active').addClass('in');
             $('#myData').addClass('active').addClass('in');
+            MyGraph.getJson(editId);
         });
 //参数设置
         $(document).on("click", '.draw-edit-set', function () {
             editHeight();
             setEdit();
             editId = $(this).parents('.editable').find('.new-graph').attr('id');
-            MyGraph.getJson(editId);
+
 
             $('.active').removeClass('active').removeClass('in');
             $('.draw-cav').addClass('cavMove');
@@ -236,6 +250,8 @@ define( function ( require, exports ) {
             $('.draw-data').show();
             $('.mySet').addClass('active').addClass('in');
             $('#mySet').addClass('active').addClass('in');
+            MyGraph.getJson(editId);
+
         });
 //删除
         $(document).on("click", ".draw-edit-delete", function () {
@@ -248,7 +264,6 @@ define( function ( require, exports ) {
             $(this).parents('.editable').remove();
             $('.draw-data').hide();
             $('.draw-cav').removeClass('cavMove');
-            console.log(dataPool);
         });
 //编辑
         $(document).on("click", ".draw-edit", function () {
