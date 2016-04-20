@@ -10,6 +10,10 @@ router.get('/home', function(req, res, next) {
   res.render('home', { title: '格拉夫BI数据可视化' });
 });
 
+router.get('/loginHome', function(req, res, next) {
+  res.render('loginHome', { title: '格拉夫BI数据可视化' });
+});
+
 router.get('/login', function(req, res, next) {
   res.render('login', { title: '登录' });
 });

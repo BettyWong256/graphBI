@@ -7,9 +7,11 @@
         <li><a href="#jump">聊天室</a></li>
         <li><a href="#jump">关于我们</a></li>
     </ul>
-    <div class="fr w300 tr lh80">
-        <button type="button" class="home-login btn btn-info mr10 w80">登  录</button>
-        <button type="button" class="home-sign btn btn-default w80">注  册</button>
+    <div class="fr w300 tr lh80 cl-white">
+        <a class="mr20" href="/users">个人中心</a>
+        <span class="mr10 w80">my_id</span>
+        <span class="mr10">|</span>
+        <a class="w80" href="/home">退  出 <span class="glyphicon glyphicon-log-out ml5"></span></a>
     </div>
 
 </div>
@@ -18,7 +20,7 @@
     <p class="lh80 pt150 ls15" style="font-size: 45px;">用数据说话</p>
     <h3 class="lh80 ls10">大数据时代还在用枯燥的Excel?  NO!</h3>
     <h3 class="lh80 ls10">数据可视化为你的BI增色添彩！</h3>
-    <button type="button" class="btn-diy pa"  data-toggle="modal" data-target="#myStart">S T A R T</button>
+    <button type="button" class="home-start btn-diy pa">S T A R T</button>
 </div>
 <!--文本-->
 <div class="h450 pt30">
@@ -85,7 +87,7 @@
                 </div>
             </div>
             <div class="w h40 tc lh40 ls10 f16 cl-white gr-gray p10" style="border-radius: 5px;margin-top: -5px;">
-                    <input type="text" class="form-control w600 iblock mr50" id="chat" placeholder="请输入" onkeydown="send(event)" disabled>
+                    <input type="text" class="form-control w600 iblock mr50" id="chat" placeholder="请输入" onkeydown="send(event)">
                     <button type="button" class="btn btn-info home-submit"
                             data-container="body" data-toggle="chat" data-placement="top"
                             data-content="请输入内容">发送</button>
@@ -99,26 +101,5 @@
     <span class="glyphicon glyphicon-eject f20"></span>
     <p>TOP</p>
 </div></a>
-
-<div class="modal fade" id="myStart" tabindex="-1" role="dialog"
-     aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close"
-                        data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <p class="modal-title" id="myModalLabel">
-                    提示
-                </p>
-            </div>
-            <div class="modal-body f16">
-                请先登录！
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
-
 
 <script src="js/business/home.js"></script>
