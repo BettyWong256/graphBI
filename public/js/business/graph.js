@@ -44,7 +44,7 @@ define( function ( require, exports ) {
             text: '未来一周气温变化',
             size: 12,
             color: "#000000",
-            subtext: '纯属虚构',
+            subtext: '数据分析',
             toolShow: true,
             legendShow: true,
             legendOrient: 'horizontal',
@@ -134,25 +134,75 @@ define( function ( require, exports ) {
         }
 
     };
-    //绘制面积堆积图
-    function graphLines(id,param){
+    //绘制面积图
+    function graphLines(state,id,param){
+        var data = {
+            theme: 'default',
+            text: '某楼盘销售情况',
+            size: 12,
+            color: "#000000",
+            subtext: '数据分析',
+            toolShow: true,
+            legendShow: true,
+            legendOrient: 'horizontal',
+            legendX:'center',
+            legendY:'top',
+            minY: 'normal',
+            maxY: 'normal',
+            rotateX: 0,
+            smooth: false,
+            legendData: ['意向','预购','成交'],
+            xData: ['周一','周二','周三','周四','周五','周六','周日'],
+            yData:[ {
+                name: '成交',
+                arr: [10, 12, 21, 54, 260, 830, 710]
+            }, {
+                name: '预购',
+                arr: [30, 182, 434, 791, 390, 30, 10]
+            }, {
+                name: '意向',
+                arr: [1320, 1132, 601, 234, 120, 90, 20]
+            } ]
+
+        };
         if(param){
             for (var key in param) {
                 data[key] = param[key];
             }
         }
         var myChartLine = echarts.init(document.getElementById(id),matchTheme(data.theme));
+        var mySeries = [];
+        for ( var i = 0; i < data.yData.length; i++ ) {
+            mySeries.push( {
+                name: data.yData[ i ].name,
+                type: 'line',
+                smooth: data.smooth,
+                itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                data: data.yData[ i ].arr
+            } );
+        };
         var option = {
+            title : {
+                text: data.text,
+                subtext: data.subtext,
+                textStyle:{
+                    fontSize: data.size,
+                    color: data.color,
+                }
+            },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
+                show: data.legendShow,
+                orient: data.legendOrient,
+                data: data.legendData,
+                x: data.legendX,
+                y:data.legendY,
             },
             toolbox: {
-                show : true,
+                show : data.toolShow,
                 feature : {
-                    mark : {show: true},
                     dataView : {show: true, readOnly: false},
                     magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
                     restore : {show: true},
@@ -164,78 +214,88 @@ define( function ( require, exports ) {
                 {
                     type : 'category',
                     boundaryGap : false,
-                    data : ['周一','周二','周三','周四','周五','周六','周日']
+                    axisLabel:{rotate: data.rotateX},
+                    data : data.xData
                 }
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    min: data.minY,
+                    max: data.maxY
                 }
             ],
-            series : [
-                {
-                    name:'邮件营销',
-                    type:'line',
-                    stack: '总量',
-                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
-                    data:[120, 132, 101, 134, 90, 230, 210]
-                },
-                {
-                    name:'联盟广告',
-                    type:'line',
-                    stack: '总量',
-                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
-                    data:[220, 182, 191, 234, 290, 330, 310]
-                },
-                {
-                    name:'视频广告',
-                    type:'line',
-                    stack: '总量',
-                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
-                    data:[150, 232, 201, 154, 190, 330, 410]
-                },
-                {
-                    name:'直接访问',
-                    type:'line',
-                    stack: '总量',
-                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
-                    data:[320, 332, 301, 334, 390, 330, 320]
-                },
-                {
-                    name:'搜索引擎',
-                    type:'line',
-                    stack: '总量',
-                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
-                    data:[820, 932, 901, 934, 1290, 1330, 1320]
-                }
-            ]
+            series : mySeries
         };
         myChartLine.setOption(option);
+        if(!param){
+            dataPool.push({id:id,data:data,state:state});
+        }
     };
     //绘制柱形图
-    function graphBar(id,param){
-        var data = {};
+    function graphBar(state,id,param){
+        var data = {
+            theme: 'default',
+            text: '某地区蒸发量和降水量',
+            size: 12,
+            color: "#000000",
+            subtext: '数据分析',
+            toolShow: true,
+            legendShow: true,
+            legendOrient: 'horizontal',
+            legendX:'center',
+            legendY:'top',
+            minY: 'normal',
+            maxY: 'normal',
+            rotateX: 0,
+            smooth: false,
+            legendData: ['蒸发量','降水量'],
+            xData: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+            yData:[ {
+                name: '蒸发量',
+                arr: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+            }, {
+                name: '降水量',
+                arr: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+            } ]
+
+        };
         if(param){
             for (var key in param) {
                 data[key] = param[key];
             }
         }
+        var mySeries = [];
+        for ( var i = 0; i < data.yData.length; i++ ) {
+            mySeries.push( {
+                name: data.yData[ i ].name,
+                type: 'bar',
+                data: data.yData[ i ].arr
+            } );
+        };
         var myChartLine = echarts.init(document.getElementById(id),matchTheme(data.theme));
         var option = {
             title : {
-                text: '某地区蒸发量和降水量',
-                subtext: '纯属虚构'
+                text: data.text,
+                subtext: data.subtext,
+                textStyle:{
+                    fontSize: data.size,
+                    color: data.color,
+                }
             },
             tooltip : {
                 trigger: 'axis'
             },
             legend: {
-                data:['蒸发量','降水量']
+                show: data.legendShow,
+                orient: data.legendOrient,
+                data: data.legendData,
+                x: data.legendX,
+                y:data.legendY
             },
             toolbox: {
-                show : true,
+                show : data.toolShow,
                 feature : {
-                    mark : {show: true},
                     dataView : {show: true, readOnly: false},
                     magicType : {show: true, type: ['line', 'bar']},
                     restore : {show: true},
@@ -246,91 +306,101 @@ define( function ( require, exports ) {
             xAxis : [
                 {
                     type : 'category',
-                    data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+                    axisLabel:{rotate: data.rotateX},
+                    data : data.xData
                 }
             ],
             yAxis : [
                 {
-                    type : 'value'
+                    type : 'value',
+                    min: data.minY,
+                    max: data.maxY
                 }
             ],
-            series : [
-                {
-                    name:'蒸发量',
-                    type:'bar',
-                    data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
-                    markPoint : {
-                        data : [
-                            {type : 'max', name: '最大值'},
-                            {type : 'min', name: '最小值'}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name: '平均值'}
-                        ]
-                    }
-                },
-                {
-                    name:'降水量',
-                    type:'bar',
-                    data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
-                    markPoint : {
-                        data : [
-                            {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
-                            {name : '年最低', value : 2.3, xAxis: 11, yAxis: 3}
-                        ]
-                    },
-                    markLine : {
-                        data : [
-                            {type : 'average', name : '平均值'}
-                        ]
-                    }
-                }
-            ]
+            series : mySeries
         };
         myChartLine.setOption(option);
+        if(!param){
+            dataPool.push({id:id,data:data,state:state});
+        }
     };
     //绘制扇形图
-    function graphPie(id,param){
-        var data = {};
+    function graphPie(state,id,param){
+        var data = {
+            theme: 'default',
+            text: '某站点用户访问来源',
+            size: 12,
+            color: "#000000",
+            subtext: '数据分析',
+            toolShow: true,
+            legendShow: true,
+            legendOrient: 'horizontal',
+            legendX:'center',
+            legendY:'top',
+            minY: 'normal',
+            maxY: 'normal',
+            rotateX: 0,
+            smooth: false,
+            legendData: ['直接访问','邮件营销','联盟广告','视频广告','搜索引擎'],
+            xData: [],
+            yData:[ {
+                name: '直接访问',
+                arr: [335]
+            }, {
+                name: '邮件营销',
+                arr: [310]
+            }, {
+                name: '联盟广告',
+                arr: [234]
+            }, {
+                name: '视频广告',
+                arr: [135]
+            }, {
+                name: '搜索引擎',
+                arr: [1548]
+            } ]
+
+        };
         if(param){
             for (var key in param) {
                 data[key] = param[key];
             }
         }
         var myChartLine = echarts.init(document.getElementById(id),matchTheme(data.theme));
+        var mySeries = [];
+        for ( var i = 0; i < data.yData.length; i++ ) {
+            mySeries.push( {
+                name: data.yData[ i ].name,
+                value: data.yData[ i ].arr[0]
+            } );
+        };
         var option = {
             title : {
-                text: '某站点用户访问来源',
-                subtext: '纯属虚构',
-                x:'center'
+                text: data.text,
+                subtext: data.subtext,
+                textStyle:{
+                    fontSize: data.size,
+                    color: data.color,
+                }
             },
             tooltip : {
                 trigger: 'item',
                 formatter: "{a} <br/>{b} : {c} ({d}%)"
             },
             legend: {
-                orient : 'vertical',
-                x : 'left',
-                data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+                show: data.legendShow,
+                orient: data.legendOrient,
+                data: data.legendData,
+                x: data.legendX,
+                y:data.legendY
             },
             toolbox: {
-                show : true,
+                show : data.toolShow,
                 feature : {
-                    mark : {show: true},
                     dataView : {show: true, readOnly: false},
                     magicType : {
                         show: true,
-                        type: ['pie', 'funnel'],
-                        option: {
-                            funnel: {
-                                x: '25%',
-                                width: '50%',
-                                funnelAlign: 'left',
-                                max: 1548
-                            }
-                        }
+                        type: ['pie', 'funnel']
                     },
                     restore : {show: true},
                     saveAsImage : {show: true}
@@ -339,49 +409,87 @@ define( function ( require, exports ) {
             calculable : true,
             series : [
                 {
-                    name:'访问来源',
                     type:'pie',
                     radius : '55%',
-                    center: ['50%', '60%'],
-                    data:[
-                        {value:335, name:'直接访问'},
-                        {value:310, name:'邮件营销'},
-                        {value:234, name:'联盟广告'},
-                        {value:135, name:'视频广告'},
-                        {value:1548, name:'搜索引擎'}
-                    ]
+                    data:mySeries
                 }
             ]
         };
+
         myChartLine.setOption(option);
+        if(!param){
+            dataPool.push({id:id,data:data,state:state});
+        }
     };
     //绘制雷达图
-    function graphGraph(id,param){
-        var data = {};
+    function graphGraph(state,id,param){
+        var data = {
+            theme: 'default',
+            text: '预算 vs 开销（Budget vs spending）',
+            size: 12,
+            color: "#000000",
+            subtext: '数据分析',
+            toolShow: true,
+            legendShow: true,
+            legendOrient: 'vertical',
+            legendX:'left',
+            legendY:'bottom',
+            minY: 'normal',
+            maxY: 'normal',
+            rotateX: 0,
+            smooth: false,
+            legendData: ['预算分配（Allocated Budget）','实际开销（Actual Spending）'],
+            xData: ['销售（sales）','管理（Administration）','信息技术（Information Techology）','客服（Customer Support）','研发（Development）','市场（Marketing）'],
+            yData:[ {
+                name: '预算分配（Allocated Budget）',
+                arr: [4300, 10000, 28000, 35000, 50000, 19000]
+            }, {
+                name: '实际开销（Actual Spending）',
+                arr: [5000, 14000, 28000, 31000, 42000, 21000]
+            } ]
+
+        };
         if(param){
             for (var key in param) {
                 data[key] = param[key];
             }
         }
         var myChartLine = echarts.init(document.getElementById(id),matchTheme(data.theme));
+        var mySeries = [];
+        var myIndicator = [];
+        for ( var i = 0; i < data.yData.length; i++ ) {
+            mySeries.push( {
+                name: data.yData[ i ].name,
+                value: data.yData[ i ].arr
+            } );
+        };
+        for ( var j = 0; j < data.xData.length; j++ ) {
+            myIndicator.push( {
+                text: data.xData[ j ]
+            } );
+        };
         var option = {
                 title : {
-                    text: '预算 vs 开销（Budget vs spending）',
-                    subtext: '纯属虚构'
+                    text: data.text,
+                    subtext: data.subtext,
+                    textStyle:{
+                        fontSize: data.size,
+                        color: data.color,
+                    }
                 },
                 tooltip : {
                     trigger: 'axis'
                 },
                 legend: {
-                    orient : 'vertical',
-                    x : 'right',
-                    y : 'bottom',
-                    data:['预算分配（Allocated Budget）','实际开销（Actual Spending）']
+                    show: data.legendShow,
+                    orient: data.legendOrient,
+                    data: data.legendData,
+                    x: data.legendX,
+                    y:data.legendY
                 },
                 toolbox: {
-                    show : true,
+                    show : data.toolShow,
                     feature : {
-                        mark : {show: true},
                         dataView : {show: true, readOnly: false},
                         restore : {show: true},
                         saveAsImage : {show: true}
@@ -389,35 +497,21 @@ define( function ( require, exports ) {
                 },
                 polar : [
                     {
-                        indicator : [
-                            { text: '销售（sales）', max: 6000},
-                            { text: '管理（Administration）', max: 16000},
-                            { text: '信息技术（Information Techology）', max: 30000},
-                            { text: '客服（Customer Support）', max: 38000},
-                            { text: '研发（Development）', max: 52000},
-                            { text: '市场（Marketing）', max: 25000}
-                        ]
+                        indicator : myIndicator
                     }
                 ],
                 calculable : true,
                 series : [
                     {
-                        name: '预算 vs 开销（Budget vs spending）',
                         type: 'radar',
-                        data : [
-                            {
-                                value : [4300, 10000, 28000, 35000, 50000, 19000],
-                                name : '预算分配（Allocated Budget）'
-                            },
-                            {
-                                value : [5000, 14000, 28000, 31000, 42000, 21000],
-                                name : '实际开销（Actual Spending）'
-                            }
-                        ]
+                        data :  mySeries
                     }
                 ]
             };
         myChartLine.setOption(option);
+        if(!param){
+            dataPool.push({id:id,data:data,state:state});
+        }
     };
 
     /**
@@ -504,7 +598,7 @@ define( function ( require, exports ) {
             if(dataPool[i].id == id){
                 dataPool[i].data.theme = $('input[name="theme"]:checked').val();
                 dataPool[i].data.text = $('#title').val();
-                dataPool[i].data.size = $('#title-size').val();
+                dataPool[i].data.size = Number($('#title-size').val());
                 dataPool[i].data.color = $('#title-color').val();
                 dataPool[i].data.subtext = $('#subtitle').val();
                 dataPool[i].data.toolShow = $('input[name="toolbox"]:checked').val() == 'true'? true : false;
@@ -532,13 +626,13 @@ define( function ( require, exports ) {
                     par.arr=[];
                     dataPool[i].data.legendData.push(editIn.find('tr').eq(y).find('th').text());
                     par.name = editIn.find('tr').eq(y).find('th').text();
-                    for(var xy=0; xy<dataPool[i].data.xData.length; xy++){
-                        par.arr.push(editIn.find('tr').eq(y).find('td').eq(xy).text())
+                    var len = dataPool[i].state == '4'? 1 :dataPool[i].data.xData.length;
+                    for(var xy=0; xy<len; xy++){
+                        par.arr.push(Number(editIn.find('tr').eq(y).find('td').eq(xy).text()));
                     }
                     dataPool[i].data.yData.push(par);
                     y++;
                 }
-
 
                 exports.init(dataPool[i].state,dataPool[i].id,dataPool[i].data);
                 break;

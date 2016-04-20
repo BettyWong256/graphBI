@@ -58,7 +58,6 @@ false-smooth
 
 
 data类型
-***1***
     theme: 'default',
     text: '未来一周气温变化',
     size: 12,
